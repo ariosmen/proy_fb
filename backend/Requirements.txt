@@ -35,6 +35,7 @@ pypiwin32==223
 PySocks==1.7.1
 pytest==7.3.1
 python-dateutil==2.8.2
+python-decouple==3.8
 pyttsx3==2.90
 pytz==2023.3
 pywin32==306
@@ -53,5 +54,6 @@ tzdata==2023.3
 urllib3==2.0.3
 uvicorn==0.22.0
 virtualenv==20.23.0
+virtualenv-clone==0.5.7
 Werkzeug==2.1.2
 wsproto==1.2.0
