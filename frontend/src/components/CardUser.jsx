@@ -5,7 +5,7 @@ export default function CardUser({ user }) {
 
     return (
         <div className="bg-zinc-950 p-2 hover:cursor-pointer hover:bg-gray-600" onClick={()=> {navigate(`/users/${user.id}`)}}>
-            <h2>{user.nombre} {user.apellido} -- {user.telefono}</h2>    
+            <h2>{user.nombre} {user.apellido}</h2>    
             <h2>{user.email}</h2>
         </div>
   )

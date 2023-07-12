@@ -4,19 +4,19 @@ import Users from "../components/Users";
 
 export default function HomePage() {
 
-  const [user, setUser] = useState([]);
+  const [users, setUsers] = useState([]);
   
   useEffect(() => {
     async function llamarUsers() {
       const res = await axios.get('http://localhost:8000/users')
-      setUser(res.data)
+      setUsers(res.data)
     }
     llamarUsers()
   }, [])
 
   return (
-    <div className="h-96 flex justify-center items-center">
-      <Users user={user} />
+    <div className="p-4">
+      <Users users={users} />
     </div>
   );
 }
